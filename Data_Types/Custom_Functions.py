@@ -1,3 +1,6 @@
+temperatures=[10,-20,-289,100]
+
+
 def celsius_converter(c):
 
     rate = 1.8
@@ -8,5 +11,5 @@ def celsius_converter(c):
         return str(f)+": "+"The lowest possible temperature that physical matter can reach is -273.15 C. Keep that in mind."
     return f
 
-
-print(celsius_converter(-375))
+for celsius in temperatures:
+    print(celsius_converter(celsius))
