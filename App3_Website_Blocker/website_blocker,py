@@ -1,13 +1,13 @@
 import time
 from datetime import datetime as dt
 
-hosts_temp = "hosts"
-hosts_path = "C:\Windows\System32\drivers\etc"
+hosts_temp = r"C:\Users\212469557\Documents\Programming\full-stack\website_blocker\hosts"
+hosts_path = r"C:\Windows\System32\drivers\etc"
 redirect = "127.0.0.1"
 website_list = ["www.facebook.com","facebook.com","mail.google.com/mail/u/0/#inbox","www.mail.google.com/mail/u/0/#inbox"]
 
 while True:
-    if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,16):
+    if dt(dt.now().year,dt.now().month,dt.now().day,2) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
         print("Working hours...")
         with open(hosts_path,'r+') as file:
             content = file.read()
